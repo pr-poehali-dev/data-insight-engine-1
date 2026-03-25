@@ -60,6 +60,80 @@ export default function Results() {
           </table>
         </div>
         <p className="mt-6 text-neutral-400 text-xs uppercase tracking-wide">И — игры · В — победы · Н — ничьи · П — поражения · ГЗ — голы забитые · ГП — голы пропущенные · О — очки</p>
+
+        <div className="mt-20 grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div>
+            <p className="uppercase text-sm tracking-widest text-neutral-500 mb-4">Бомбардиры</p>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-neutral-900">
+                  <th className="text-left py-2 px-2 text-neutral-500 font-medium uppercase tracking-wide w-8">#</th>
+                  <th className="text-left py-2 px-3 text-neutral-500 font-medium uppercase tracking-wide">Игрок</th>
+                  <th className="text-left py-2 px-3 text-neutral-500 font-medium uppercase tracking-wide">Команда</th>
+                  <th className="text-center py-2 px-2 text-neutral-900 font-bold uppercase tracking-wide">Г</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Array.from({ length: 10 }, (_, i) => (
+                  <tr key={i} className="border-b border-neutral-100 hover:bg-neutral-50 transition-colors">
+                    <td className="py-3 px-2 text-neutral-400 font-bold">{i + 1}</td>
+                    <td className="py-3 px-3 text-neutral-900 font-semibold">Игрок {i + 1}</td>
+                    <td className="py-3 px-3 text-neutral-500">—</td>
+                    <td className="py-3 px-2 text-center font-bold text-neutral-900">0</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <p className="uppercase text-sm tracking-widest text-neutral-500 mb-4">Ассистенты</p>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-neutral-900">
+                  <th className="text-left py-2 px-2 text-neutral-500 font-medium uppercase tracking-wide w-8">#</th>
+                  <th className="text-left py-2 px-3 text-neutral-500 font-medium uppercase tracking-wide">Игрок</th>
+                  <th className="text-left py-2 px-3 text-neutral-500 font-medium uppercase tracking-wide">Команда</th>
+                  <th className="text-center py-2 px-2 text-neutral-900 font-bold uppercase tracking-wide">А</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Array.from({ length: 10 }, (_, i) => (
+                  <tr key={i} className="border-b border-neutral-100 hover:bg-neutral-50 transition-colors">
+                    <td className="py-3 px-2 text-neutral-400 font-bold">{i + 1}</td>
+                    <td className="py-3 px-3 text-neutral-900 font-semibold">Игрок {i + 1}</td>
+                    <td className="py-3 px-3 text-neutral-500">—</td>
+                    <td className="py-3 px-2 text-center font-bold text-neutral-900">0</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <p className="uppercase text-sm tracking-widest text-neutral-500 mb-4">Гол + Пас</p>
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b-2 border-neutral-900">
+                  <th className="text-left py-2 px-2 text-neutral-500 font-medium uppercase tracking-wide w-8">#</th>
+                  <th className="text-left py-2 px-3 text-neutral-500 font-medium uppercase tracking-wide">Игрок</th>
+                  <th className="text-left py-2 px-3 text-neutral-500 font-medium uppercase tracking-wide">Команда</th>
+                  <th className="text-center py-2 px-2 text-neutral-900 font-bold uppercase tracking-wide">Г+П</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Array.from({ length: 10 }, (_, i) => (
+                  <tr key={i} className="border-b border-neutral-100 hover:bg-neutral-50 transition-colors">
+                    <td className="py-3 px-2 text-neutral-400 font-bold">{i + 1}</td>
+                    <td className="py-3 px-3 text-neutral-900 font-semibold">Игрок {i + 1}</td>
+                    <td className="py-3 px-3 text-neutral-500">—</td>
+                    <td className="py-3 px-2 text-center font-bold text-neutral-900">0</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   );
