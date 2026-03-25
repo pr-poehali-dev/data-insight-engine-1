@@ -34,9 +34,14 @@ export default function Hero() {
         <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
           Любительский футбол нового уровня. Команды, турниры, статистика — всё в одном месте.
         </p>
-        <button className="mt-8 bg-white text-black px-8 py-3 uppercase text-sm tracking-wide font-semibold hover:bg-neutral-200 transition-colors duration-300 cursor-pointer">
+        <a
+          href="https://vk.com/club237048823"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8 inline-block bg-white text-black px-8 py-3 uppercase text-sm tracking-wide font-semibold hover:bg-neutral-200 transition-colors duration-300"
+        >
           Вступить в лигу
-        </button>
+        </a>
       </div>
     </div>
   );
