@@ -19,19 +19,24 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full"
       >
         <img
-          src="/images/mountain-landscape.jpg"
-          alt="Mountain landscape"
+          src="https://cdn.poehali.dev/projects/da5fa67a-5413-4b47-9421-835a645c4d31/files/81e99a7a-9404-4ef1-958b-7641b0c62aef.jpg"
+          alt="Стадион Самара"
           className="w-full h-full object-cover"
         />
+        <div className="absolute inset-0 bg-black/40" />
       </motion.div>
 
       <div className="relative z-10 text-center text-white">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
-          ОТКРОЙ
+        <p className="text-sm md:text-base uppercase tracking-widest mb-4 opacity-80">Самара · с 2015 года</p>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-none">
+          САМАРСКАЯ<br/>ФУТБОЛЬНАЯ<br/>ЛИГА
         </h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto px-6 opacity-90">
-          Исследуй границы дизайна с иммерсивным параллакс-эффектом
+          Любительский футбол нового уровня. Команды, турниры, статистика — всё в одном месте.
         </p>
+        <button className="mt-8 bg-white text-black px-8 py-3 uppercase text-sm tracking-wide font-semibold hover:bg-neutral-200 transition-colors duration-300 cursor-pointer">
+          Вступить в лигу
+        </button>
       </div>
     </div>
   );
