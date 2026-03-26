@@ -23,7 +23,7 @@ export default function Hero() {
           alt="Поле мини-футбол"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/55" />
       </motion.div>
 
       <div className="relative z-10 text-center text-white">
